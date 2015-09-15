@@ -1,3 +1,5 @@
+**This is an alpha fork of TouchScript that implements support for X11 (XInput2) multitouch.**
+
 ![](https://raw.github.com/wiki/TouchScript/TouchScript/images/dvfu.jpg)
 
 ## TouchScript — multitouch library for Unity
