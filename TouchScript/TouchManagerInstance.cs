@@ -483,9 +483,9 @@ namespace TouchScript
                     case RuntimePlatform.IPhonePlayer:
                     case RuntimePlatform.Android:
                     case RuntimePlatform.BlackBerryPlayer:
-                    case RuntimePlatform.MetroPlayerARM:
-                    case RuntimePlatform.MetroPlayerX64:
-                    case RuntimePlatform.MetroPlayerX86:
+//                    case RuntimePlatform.MetroPlayerARM:
+//                    case RuntimePlatform.MetroPlayerX64:
+//                    case RuntimePlatform.MetroPlayerX86:
                     case RuntimePlatform.WP8Player:
                         obj.AddComponent<MobileInput>();
                         break;

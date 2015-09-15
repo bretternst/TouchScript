@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{6A8A2544-312D-45F2-BDE1-A16058E2AD99}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -21,8 +19,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>
-    </DocumentationFile>
     <CustomCommands>
       <CustomCommands>
         <Command type="AfterBuild" command="/bin/sh -c 'cp ${TargetDir}/*.dll ${SolutionDir}/UnityPackages/TouchScript.Windows7/Assets/TouchScript/Plugins/ | cp ${TargetDir}/*.dll ${SolutionDir}/UnityPackages/TouchScript.Windows8/Assets/TouchScript/Plugins/'" workingdir="" />

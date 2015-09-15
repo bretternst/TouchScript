@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>10.0.20506</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{128FD14A-9D70-4B07-8F9A-E85A511BA28B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -21,8 +19,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>
-    </DocumentationFile>
     <CustomCommands>
       <CustomCommands>
         <Command type="AfterBuild" command="/bin/sh -c '${SolutionDir}/Build/postbuild.sh &quot;${SolutionDir}&quot; Plugins &quot;${TargetDir}/&quot;*.dll'" workingdir="${SolutionDir}/Build" />
@@ -52,7 +48,6 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>..\Lib\UnityEngine.UI.dll</HintPath>
-      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -125,10 +120,6 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>cd $(ProjectDir)..\Build
-postbuild.bat "$(ProjectDir)..\" Plugins "$(ProjectDir)$(OutDir)*.dll"</PostBuildEvent>
-  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
